@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="validation.css">
+  <title>Banking Form</title>
+</head>
+<body>
+  <form>
+    <fieldset>
+ <!-- personal informaition -->
+      <label class="hidden" for="firstname">First Name</label>
+      <input type="text" name="firstname" placeholder="First Name">
+
+      <label class="hidden" for="middlename">Middle Name</label>
+      <input type="text" name="middlename" placeholder="Middle Name">
+
+      <label class="hidden" for="lastname">Last Name</label>
+      <input type="text" name="lastname" placeholder="Last Name">
+
+      <label class="hidden" for="address">Address</label>
+      <textarea type="text" name="address" placeholder="Address"></textarea>
+
+      <label class="hidden" for="occupation">Occupation</label>
+      <input type="text" name="occupation" placeholder="occupation">
+      
+      <label class="hidden" for="employer">Employer</label>
+      <input type="text" name="employer" placeholder="Employer">
+
+      <label class="hidden" for="employeraddress">Employer Address</label>
+      <textarea type="text" name="employeraddress" placeholder="Employer Address"></textarea>
+    </fieldset>
+<!-- type of loan -->
+    <fieldset>
+
+      <label for="commerical">Commercial</label>
+      <input type="radio" value="commercial" name="loantype" id="commercial">
+
+      <label for="realestate">Real Estate</label>
+      <input type="radio" value="realestate" name="loantype" id="realestate">
+
+      <label for="personal">Personal</label>
+      <input type="radio" value="personal" name="loantype" id="personal">
+
+      <label for="mortgage">Mortgage</label>
+      <input type="radio" value="mortgage" name="loantype" id="mortgage">
+    </fieldset>
+<!-- amount of loan -->
+    <label for="amount">Amount of Loan</label>
+    <input type="text" name="amount">
+<!-- length of loan -->
+    <fieldset>
+      <h6>Length of Loan</h6>
+      <label for="5">5 years</label>
+      <input type="radio" name="length" value="5">
+      
+      <label for="15">15 years</label>
+      <input type="radio" name="length" value="15">
+      
+      <label for="30">30 years</label>
+      <input type="radio" name="length" value="30">
+    </fieldset>
+<!-- special conditions -->
+    <fieldset>
+      <h6>Do you have special conditions?</h6>
+      <label for="downpayment">I have a downpayment</label>
+      <input type="checkbox" value="downpayment" id="downpayment" name="downpayment">
+      
+      <label for="outofstate">Out-of-State</label>
+      <input type="checkbox" value="outofstate" id="outofstate" name="outofstate">
+      
+      <label for="married">Married</label>
+      <input type="checkbox" value="married" id="married" name="married">
+      
+      <label for="cosigned">Loan will be co-signed</label>
+      <input type="checkbox" value="cosign" id="cosign" name="cosign">
+    </fieldset>
+<!-- additional comments -->
+    <label for="comments">Additional Comments</label>
+    <br>
+    <textarea type="text" name="comments" placeholder="Additional Comments"></textarea>
+<!-- contact info -->
+    <fieldset>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="text" name="phone" id="phone" placeholder="555-555-5555">
+
+      <label for="linkedin">LinkedIn</label>
+      <input type="url" name="linkedin" required>
+    </fieldset>
+
+    <input type="submit" name="submit" value="submit">
+  </form>
+
+</body>
+</html>
